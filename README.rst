@@ -403,7 +403,8 @@ Thanks to @DaWy
 
 Sample Usage on Template
 ========================
-This is an example on a Django Template, that defines a fetching time interval of 2 Seconds, and fetches 10 notifications. A badge (Bootstrap) with a count of unread notifications is generated ::
+This is an example on a Django Template, that defines a fetching time interval of 2 Seconds, and fetches 10 notifications. A badge (Bootstrap) with a count of unread notifications is generated 
+    ::
 
 {% load static notifications_tags %}
 <!DOCTYPE html>
