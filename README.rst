@@ -407,25 +407,13 @@ This is an example on a Django Template, that defines a fetching time interval o
     ::
 
 {% load static notifications_tags %}
-<!DOCTYPE html>
-<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
-<!--[if !IE]><!-->
-<html lang="en">
-<!--<![endif]-->
-<head>
-    <meta charset="utf-8" />
-    <title>Infinite Admin | Inbox (20+)</title>
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-    <meta content="" name="description" />
-    <meta content="" name="author" />
-    
+
      <script src="{% static 'notifications/notify.js' %}" type="text/javascript"></script>
      {% register_notify_callbacks refresh_period=2 fetch=10 callbacks='fill_notification_list,fill_notification_badge' %}
-</head>
-<body>
+
+
 <span class="badge bg-success">{% live_notify_badge  %}</span>
-</body>
-</html>
+
 
 
 Notes
